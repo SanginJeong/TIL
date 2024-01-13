@@ -35,3 +35,8 @@
 
 세로병합을 해서 원래있던 1태그가 주석처리됨
 
+### table 태그의 display
+
+- table 태그의 기본 display 는 table-cell이다.
+
+setAttribute로 병합한 후 다시 원래대로 되돌릴 때, display:block 을 사용해서 애먹었던 적이 있다.
