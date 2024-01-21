@@ -26,6 +26,8 @@ store에서 useSelector를 이용해서 가져온다.
     npm install redux
     npm install react-redux
 
+    npm install redux react-redux // 이렇게 합칠 수 있음
+
 ## 적용
 
 index.js 파일로 이동한다.
