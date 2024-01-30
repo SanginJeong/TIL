@@ -25,3 +25,12 @@
 
 를 넣어주면 된다.
 
+
+## 실전 예시
+
+### 페이지가 로딩될 때 focus 주고 싶으면?
+
+    inputRef.current.focus()
+
+를 useEffect에 넣어주면 된다.
+
