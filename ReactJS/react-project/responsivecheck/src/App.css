@@ -1,0 +1,16 @@
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.box{
+  width: 400px;
+  height: 400px;
+  font-size: 36px;
+  text-align: center;
+}
