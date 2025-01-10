@@ -16,7 +16,6 @@ const WarningPage = () => {
     <div>
       <h1>경고모달입니다.</h1>
       <button onClick={handleOpenWarn}>경고 모달 열기</button>
-
       <Modal isOpen={isOpen} onClose={onClose}>
         <WarningForm/>
       </Modal>

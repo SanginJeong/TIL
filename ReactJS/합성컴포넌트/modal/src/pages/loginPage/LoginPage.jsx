@@ -16,7 +16,6 @@ const LoginPage = () => {
   const submitLogin = (e) => {
     e.preventDefault();
     console.log(user);
-    
     setIsOpen(false);
   }
 
