@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1: rem, px
+w-4 는 1rem이고(1마다 0.25씩 rem 증가) , w-[px] 은 px -->
+  <div class="w-4 w-[20px]">
+    111
+  </div>
+<!-- 2: bg, border, border-color, rounded -->
+  <div class="bg-pink-400 w-64 h-64 border-8 border-black rounded-[10%]">
+    111
+  </div>
+
+<!-- 3: w,h,p,m -->
+<!-- 없는 숫자들은 -[] 로 사용, x축 y축은 mx, my 이런식으로 -->
+  <div class="w-64 h-64 bg-pink-400  w-[350px] h-[350px] p-4 p-[20px] m-4 m-[20px] mx-10 my-20">
+    111
+  </div>
+
+<!-- 4: text-color, text-size, font-bold, cursor -->
+  <div class="w-64 h-64 bg-black text-white text-[24px] font-bold font-[100] cursor-pointer">
+    111
+  </div>
+
+<!-- 5: flex, flex-col, justify, items, gap -->
+  <div class="w-64 h-64 bg-pink-400 text-[50px] flex justify-center items-center">
+    111
+  </div>
+
+  <div class="bg-black w-[750px] h-[750px] flex flex-col flex-row justify-center items-center gap-[16px]">
+    <div class="w-64 h-64 bg-pink-400 font-bold text-[50px] flex justify-center items-center">111</div>
+    <div class="w-64 h-64 bg-pink-400 font-bold text-[50px] flex justify-center items-center">222</div>
+  </div>
+
+<!-- 6: hover, transition -->
+  <div class="bg-black w-[750px] h-[750px] flex flex-col flex-row justify-center items-center gap-[16px]">
+    <div class="hover:bg-purple-400 transition w-64 h-64 bg-pink-400 font-bold text-[50px] flex justify-center items-center">111</div>
+    <div class="hover:bg-red-400 transition w-64 h-64 bg-pink-400 font-bold text-[50px] flex justify-center items-center">222</div>
+  </div>
+</body>
+</html>
