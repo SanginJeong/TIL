@@ -81,3 +81,39 @@ get은 this의 느낌이다. 현재 객체의 state를 가져와서 액션함수
       }
     })
 
+
+## Update : ** 그냥 리턴 쓰지말자.
+
+### store 가 한개의 상태를 반환할 때
+
+
+    import {create} from 'zustand';
+    export const useCountStore = create((set,get) => (
+      {
+        count: 0,
+        improve: () => set((state)=> ({count: state.count+1}))
+      }
+    ) 
+
+
+### store 가 다용도로 쓰일 때
+
+modal 을 예시로 login에 쓸 수도 있고 다른 데서도 쓸 수도 있다.
+
+...state를 꼭 써서 login state안에 있는 다른 액션함수들에 영향이 안가게 하자
+
+    import {create} from 'zustand';
+
+    export const useModalStore = create((set) => ({
+      login: {
+        isOpen: false,
+        closeModal: () => set((state) => ({ login: { ...state.login, isOpen: false } })),
+        openModal: () => set((state) => ({ login: { ...state.login, isOpen: true } })),
+      }
+    }));
+
+여기서 store를 불러와서 사용하려면
+
+    const {isOpen, openModal, closeModal} = useModalStore((state)=>state.login);
+
+요렇게 state 중에서 login에 해당하는 것들을 불러옴
