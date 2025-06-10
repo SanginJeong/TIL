@@ -47,6 +47,14 @@ React.Children은 React에서 제공하는 유틸리티 객체로, 자식 컴포
 
 Dropdown (최상위 컴포넌트) -> Dropdown.header (자식컴포넌트) -> Dropdown.content (손자 컴포넌트)
 
+### React.cloneElement
+
+    React.cloneElement(element, [props], [...children])
+
+- element: 복제하려는 React 요소입니다.
+- props: 복제된 요소에 추가할 또는 변경할 props입니다.
+- children: 자식 요소를 덧붙일 수 있습니다. (선택적)
+
 여기서 아래 코드는 Dropdown에서 자식컴포넌트들에게 isOpen 과 액션함수들을 넘겨준다. 
 
 그렇지만 손자 컴포넌트에서는 넘겨 받을 수 없어서 각자 isOpen을 console.log 해보면 header에서는 false가 뜨고, content에서는 undefined가 뜸
