@@ -11,3 +11,9 @@
 2. merge 의 결과가 되었으면 하는 모습대로 코드 수정
 3. 커밋
 
+## merge 시 conflict 해결법 2 : merge 취소하기
+
+merge를 시도하기 이전의 상태로 돌아가기이다.
+
+    git merge --abort
+
