@@ -1,3 +1,3 @@
-function sum_feature_1 (a,b) {
+function sum (a,b) {
   return a+b;
 }
