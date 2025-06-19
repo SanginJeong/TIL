@@ -28,4 +28,12 @@ repository 만 바뀐다.
     git reset --hard HEAD^   // HEAD 이전의 커밋으로
     git reset --hard HEAD~x // HEAD 보다 x번 전의 커밋으로
 
-    
+## git reset 의 원리
+
+![alt text](image-4.png)
+
+HEAD 는 그대로 브랜치를 가리키고, git reset을 했을 때 브랜치가 가리키는 커밋이 이동하는 것이다.
+
+주의해야 할 점은, 여기서 reset을 쓴다 해도 이후 커밋이 사라지지 않는다.
+
+##### 과거의 커밋으로 reset을 한다고 이후 커밋이 사라지지 않는다. 또한 다시 이후의 커밋으로 이동할 수 있다.
