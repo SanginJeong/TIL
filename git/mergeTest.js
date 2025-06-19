@@ -1,7 +1,3 @@
-function sum_feature_2(a,b) {
+function sum (a,b) {
   return a+b;
-}
-
-function mul(a,b){
-  return a*b;
 }
