@@ -28,3 +28,4 @@ HEAD는 결과적으로 commit을 가리킨다.
 
 ![alt text](image-3.png)
 
+dddasdasd
