@@ -41,3 +41,16 @@ grow와 반대로 요소의 크기를 줄인다.
 
 기본속성은 auto이고, width와 동일한 basis값을 설정한다면 flex-basis를 우선시한다.
 
+## width, basis로 시작 크기 설정
+
+    flex-grow: 1;
+    flex-shrink : 0;
+    width : 100px;
+
+    flex-grow: 1;
+    flex-shrink : 0;
+    flex-basis : 100px;
+
+이의 경우 아래와 같이 간단하게 사용 가능
+
+    flex: 1 0 100px;
