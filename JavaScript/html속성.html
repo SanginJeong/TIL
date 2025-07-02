@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="/"></a>
+  <div class="box"></div>
+
+  <script>
+    const link = document.querySelector('a');
+    const $test = document.querySelector('.box');
+
+    // 속성에 접근하기
+    console.log(link.getAttribute("href")); 
+    console.log($test.getAttribute("class")); 
+    
+    // 속성 설정하기 : ('접근속성', "원하는 설정");
+    link.setAttribute('href', '/test');
+    $test.setAttribute("class", "box1");
+    console.log(link.getAttribute("href")); 
+    console.log($test.getAttribute("class")); 
+    
+    // 속성 삭제하기
+    link.removeAttribute('href');
+    $test.removeAttribute("class");
+    console.log(link.getAttribute("href")); 
+    console.log($test.getAttribute("class")); 
+  </script>
+</body>
+</html>
