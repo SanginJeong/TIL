@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>클릭</button>
+  
+  <script>
+    const btn = document.querySelector('button');
+    
+    // <!-- removeEventListner 사용 시 addEventListner 시 사용했던 함수를 가져와야 한다. -->
+    // btn.addEventListener("click", ()=>console.log("클릭!"));
+    // btn.removeEventListener("click", ()=>console.log("클릭!")); // 제거 안됨
+
+    const click = () => {
+      console.log("클릭!!!");
+    }
+
+    btn.addEventListener("click", click);
+    btn.removeEventListener("click", click);
+  </script>
+</body>
+</html>
