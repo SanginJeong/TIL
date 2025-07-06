@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>클릭</button>
+
+    <script>
+			const $button = document.querySelector("button");
+			
+      const func = (e) => {
+        console.log(e.button); // 좌클릭: 0번, 휠: 1번, 우클릭: 2번
+      };
+
+
+      $button.addEventListener("mouseup", func); // 우클릭은 컨텍스트메뉴가 생기는 일이 일어남.
+			$button.addEventListener("contextmenu", (e)=>e.preventDefault());
+    </script>
+  </body>
+</html>
