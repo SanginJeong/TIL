@@ -1,7 +1,7 @@
 // parameter : 함수를 선언할 때 받는 매개변수
 // argument : 함수를 호출할 때 넣어주는 매개변수
 
-// argument 객체
+// arguments 객체 : arguments 객체는 화살표함수에서는 사용할 수 없다.
 
 function word() {
   console.log(arguments)
