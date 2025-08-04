@@ -6,6 +6,10 @@ BEM은 CSS 클래스 이름을 짓는 규칙이다. 블록(Block), 요소(Elemen
 
     .block__element--modifier
 
+## BEM 규칙의 장점
+
+클래스 이름이 규칙에 맞게 일관성있기 때문에 유지보수에 편리하단ㄴ
+
 ## 예시
 
     .signin-form { /* 로그인 폼 */ }
